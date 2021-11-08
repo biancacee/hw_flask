@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+	<h1> Welcome {{name}} here are top destinations! </h1>
+	<p>
+	<a href = "http://www.google.com">google.com</a>
+	</p>
+	<div>
+		<ul>	{% for c in top_cities: %}
+			<li> {{c}}</li>
+			{% endfor %}
+	
+	</div>
+
+
+
+	<body>
+	{% block content %}
+	{% endblock %}
+	</body>
+	  
+</html>
